@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/d2"
+            android:layout_height="260dp"/>
+
+    <TextView
+            android:id="@+id/display_txt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/d1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:hint="Display Text"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_below="@+id/image_view"
+            android:textIsSelectable="true"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:scrollbars="vertical"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="54dp"
+    >
+
+        <Button
+                android:id="@+id/capimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capture  \nimage"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:backgroundTint="@android:color/holo_orange_dark"
+        />
+
+        <Button
+                android:id="@+id/detectxt"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="Detect \n Text"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:textSize="18sp"
+
+        />
+        <Button
+                android:id="@+id/detectFace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:text="Detect  \nFace"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:textSize="18sp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
