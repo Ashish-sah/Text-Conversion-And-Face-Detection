@@ -37,7 +37,7 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-You can Download the application using below link-
+You can Download the project using below link-
 https://github.com/Ashish-sah/Text-Conversion-And-Face-Detection
 ```
 ## Built With Love
